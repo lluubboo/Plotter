@@ -186,7 +186,7 @@ void Plotter<T>::print_row(unsigned int start_index, unsigned int cell_count, in
  * @return True if the column width is sufficient, false otherwise.
  */
 template <typename T>
-bool Plotter<T>::col_width_is_sufficient(auto value, unsigned int column_width) {
+bool Plotter<T>::col_width_is_sufficient(T value, unsigned int column_width) {
     std::stringstream ss;
     ss << std::setprecision(_precision) << std::fixed << value;
     return ss.str().length() <= column_width;

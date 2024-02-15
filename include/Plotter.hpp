@@ -38,7 +38,7 @@ class Plotter {
 
     int calculate_column_width(int table_width, int cols);
     int calculate_rows(int size, int column_count);
-    bool col_width_is_sufficient(auto value, unsigned int column_width);
+    bool col_width_is_sufficient(T value, unsigned int column_width);
 
 public:
         

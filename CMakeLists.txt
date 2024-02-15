@@ -4,11 +4,8 @@ cmake_minimum_required(VERSION 3.12)
 # Set the project name
 project(Plotter)
 
-# Add the source files for the library
-set(SOURCES
-    src/file1.cpp
-    src/file2.cpp
-)
+# Set the source files
+set(SOURCES src/plotter.cpp)
 
 # Create the static library target
 add_library(Plotter STATIC ${SOURCES})
